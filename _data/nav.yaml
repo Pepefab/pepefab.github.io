@@ -8,8 +8,4 @@
 - title: Forensics
   url: category/forensics.html
   hue: "var(--c-themeHueRed)"
-  subnav:
-      - title: TryHackMe - Sequel Dump
-        url: category/thm_sequeldump.html
-        hue: "var(--c-themeHueOrange)"
 

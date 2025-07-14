@@ -1,9 +1,9 @@
 ---
 layout: post
-category: [forensics, tryhackme]
+category: [forensics]
 title: "Sequel Dump"
 author: pepefab
-date: 2025-07-14
+date: 2025-07-14 21:00:00 +0200
 ---
 
 # TryHackMe - Sequel Dump
@@ -15,7 +15,7 @@ This CTF is about retrieving data stolen by SQLMap using only the PCAP containin
 We're given a PCAP containing requests from SQLMap, which has been used to steal sensitive information.
 
 <a href="/assets/img/thm/sequeldump/wireshark.png" data-lity class="sx-center">
-    <img src="/assets/img/posts/sequeldump/wireshark.png"/>
+    <img src="/assets/img/thm/sequeldump/wireshark.png"/>
 </a>
 
 Using Wireshark's object export feature (File > Export Objects > HTTP > save all), we can export every request/response to multiple files.
@@ -23,7 +23,7 @@ Using Wireshark's object export feature (File > Export Objects > HTTP > save all
 The requests can be URL decoded with CyberChef to have a clearer view of what they are about.
 
 <a href="/assets/img/thm/sequeldump/cyberchef.png" data-lity class="sx-center">
-    <img src="/assets/img/posts/sequeldump/cyberchef.png"/>
+    <img src="/assets/img/thm/sequeldump/cyberchef.png"/>
 </a>
 
 Multiple types of sql injection methods are used, but one type of injection caught my eye as it dumps 'name' and 'description' from 'profiles'.
@@ -102,7 +102,7 @@ if __name__ == "__main__":
 This outputs all row values for fields 'name' and 'description', including the flag.
 
 <a href="/assets/img/thm/sequeldump/solved.png" data-lity class="sx-center">
-    <img src="/assets/img/posts/sequeldump/solved.png"/>
+    <img src="/assets/img/thm/sequeldump/solved.png"/>
 </a>
 
 ## Conclusion
