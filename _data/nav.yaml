@@ -1,0 +1,7 @@
+- title: OSINT
+  url: category/osint.html
+  hue: "var(--c-themeHueRed)"
+  subnav:
+      - title: Bellingcat challenges
+        url: category/bellingcat.html
+        hue: "var(--c-themeHueOrange)"
