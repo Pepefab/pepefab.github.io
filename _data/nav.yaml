@@ -5,3 +5,11 @@
       - title: Bellingcat challenges
         url: category/bellingcat.html
         hue: "var(--c-themeHueOrange)"
+- title: Forensics
+  url: category/forensics.html
+  hue: "var(--c-themeHueRed)"
+  subnav:
+      - title: TryHackMe - Sequel Dump
+        url: category/thm_sequeldump.html
+        hue: "var(--c-themeHueOrange)"
+

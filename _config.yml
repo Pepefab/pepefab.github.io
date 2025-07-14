@@ -1,5 +1,5 @@
 title: Fab Lab
-description: Malware analysis and CTF writeup stuff
+description: Malware analysis and CTF writeup
 remote_theme: jekyll-theme-simplex
 plugins:
   - jekyll-remote-theme
